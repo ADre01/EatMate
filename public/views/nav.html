@@ -1,0 +1,28 @@
+<div id="mainNav" ng-controller="AuthController">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#mainNav">EAT<span>MATE</span></a>
+        </div>
+        
+        <div class="collapse navbar-collapse nav-nav" id="bs-example-navbar-collapse-1">
+                <ul  class="nav">
+                    <li>
+                        <a class="page-scroll" ng-hide="currentUser" >About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll">Contact</a>
+                    </li>
+                    <li ng-hide="currentUser">
+                        <a class="page-scroll">Login</a>
+                    </li>
+                    <li ng-show="currentUser">
+                        <a class="page-scroll" ng-click="logout()">Log out</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+    </div>
+</div>

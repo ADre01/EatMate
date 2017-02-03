@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+#landing #img-wrapper {
+  height: 919px;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-color: #f8f8f8;
+  background-image: url(../images/city_bridge_rail_fog_blurred_glare_cars_traffic_47826_3840x2160.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.95; }
+#landing .container .landing-login .panel {
+  height: 660px;
+  margin-top: 120px;
+  background: rgba(178, 178, 178, 0.7);
+  border: 1px solid #B2B2B2;
+  border-radius: 0px; }
+  #landing .container .landing-login .panel .panel-title {
+    margin-left: 10px;
+    margin-bottom: -15px; }
+    #landing .container .landing-login .panel .panel-title span {
+      font-weight: 700;
+      color: #57cc3d; }
+  #landing .container .landing-login .panel .panel-body div {
+    margin-bottom: 10px; }
+  #landing .container .landing-login .panel .panel-body label {
+    font-size: 15px;
+    width: 40%; }
+  #landing .container .landing-login .panel .panel-body input,
+  #landing .container .landing-login .panel .panel-body select {
+    width: 80%; }
+  #landing .container .landing-login .panel .panel-body h4 {
+    margin-left: 11px;
+    margin-top: 40px; }
+    #landing .container .landing-login .panel .panel-body h4 span {
+      font-weight: 700;
+      color: #57cc3d; }
+  #landing .container .landing-login .panel .panel-body button {
+    margin: 15px;
+    background-color: #57cc3d; }
+    #landing .container .landing-login .panel .panel-body button:hover {
+      background-color: #43a92d;
+      transition: all 0.2s ease-in-out; }
+  #landing .container .landing-login .panel .panel-body #login {
+    font-size: 15px; }
+
+#footer {
+  margin-top: -110px; }
+  #footer .content-wrapper {
+    width: 33%;
+    background-color: transparent; }
+    #footer .content-wrapper .social-media .thumbnail {
+      background-color: transparent;
+      border: none;
+      width: 60px;
+      height: 60px;
+      margin-right: 5px; }
+      #footer .content-wrapper .social-media .thumbnail .image {
+        height: 100%;
+        width: 100%; }
+        #footer .content-wrapper .social-media .thumbnail .image img {
+          height: 35px;
+          width: 35px;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+          #footer .content-wrapper .social-media .thumbnail .image img:hover {
+            -webkit-transform: scale(1.4);
+            -moz-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+            -o-transform: scale(1.4);
+            transform: scale(1.4); }
+
+#mainNav {
+  position: absolute;
+  z-index: 1000; }
+  #mainNav .container .navbar-header {
+    margin-top: 30px;
+    background-color: transparent; }
+    #mainNav .container .navbar-header a {
+      font-size: 42px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: #5FCE46; }
+      #mainNav .container .navbar-header a span {
+        font-weight: 300;
+        color: #3D3D3D; }
+  #mainNav .container .nav-nav {
+    background-color: transparent;
+    float: right;
+    margin-top: 30px;
+    margin-right: -20px; }
+    #mainNav .container .nav-nav ul li {
+      font-size: 20px;
+      display: inline-block; }
+      #mainNav .container .nav-nav ul li a {
+        color: #46a830; }
+        #mainNav .container .nav-nav ul li a:hover {
+          color: #255919; }
+
+/*# sourceMappingURL=loginstyle.css.map */
