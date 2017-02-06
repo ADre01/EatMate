@@ -18,7 +18,14 @@ router.post('/match', UserCtrl.findMatchedUsers);
 
 
 //Post image
-router.post('/uploadImage', multipartMiddleware,UserCtrl.uploadImage);
+router.post('/saveSettings/:id', multipartMiddleware,UserCtrl.uploadImage);
+
+//Initilize Profile Data
+router.get('/profile/:id', UserCtrl.getProfile);
+
+
+//Updates Profile
+router.post('/updateProfile/:id', UserCtrl.updateProfile);
 
 
 //Update profile info

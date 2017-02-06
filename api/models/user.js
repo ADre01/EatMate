@@ -8,7 +8,10 @@ var userSchema = new mongoose.Schema({
     interests: [String],
     sex: String,
     password: String,
-    url: String
+    url: {
+        type: String,
+        Default: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+    }
 
 });
 

@@ -50,21 +50,11 @@ module.exports.findMatchedUsers = function (req, res, next) {
 //Updates user profile
 module.exports.updateProfile = function (req, res, next) {
     User.findById(req.params.id).then(function (user) {
-        user.name = req.body.name;
-        user.email = req.body.email;
+        console.log(req.body);
+        user.city = req.body.city;
         user.age = req.body.age;
-        user.city = req.body.city,
-            user.interests = req.body.interests;
-        user.sex = req.body.sex;
-        user.password = req.body.password;
-        user.save(function (err, updatedUser) {
-            if (err) {
-                res.status(401).send(err);
-            } else {
-                res.status(200).send(updatedUser);
-            }
-        });
-
+        user.save();
+        res.status(200).json(user);
     }).catch(function (err) {
         res.status(401);
         console.log(err);
@@ -79,15 +69,29 @@ module.exports.updateProfile = function (req, res, next) {
 
 
 
+module.exports.getProfile = function(req, res, next){
+  User.findById(req.params.id).then(function(user){
+      res.json(user);
+  }).catch(function(err){
+     res.send(err); 
+  });  
+};
+
+
+
 module.exports.uploadImage = function(req, res, next) {
     if (req.files.file) {
         cloudinary.uploader.upload(req.files.file.path, function (result) {
             if (result.url) {
-                req.imageLink = result.url;
-                res.json(result);
-                next();
+                User.findById(req.params.id).then(function(user){
+                    user.url = result.url;
+                    user.save();
+                    res.send(user);
+                }).catch(function(err){
+                    return res.send(err);
+                });
             } else {
-                res.json(error);
+                res.send(err);
             }
         });
     } else {
