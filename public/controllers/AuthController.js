@@ -52,5 +52,6 @@ myApp.controller('AuthController', ['$rootScope', '$scope', '$http', '$location'
         $rootScope.currentUser = null;
         $location.path('/login');
     }
+    
 
 }]);

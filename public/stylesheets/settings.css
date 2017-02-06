@@ -1,0 +1,150 @@
+/* line 2, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 7, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea; }
+
+/* line 16, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+.profile {
+  margin: 100px auto; }
+  /* line 18, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+  .profile .profile-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #B2B2B2;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: auto;
+    border-radius: 10px; }
+    /* line 26, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    .profile .profile-box .list h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 40px;
+      color: #494848;
+      margin-bottom: 30px; }
+    /* line 32, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    .profile .profile-box .list ul li {
+      text-decoration: none;
+      list-style: none;
+      margin: 10px auto;
+      font-size: 20px; }
+      /* line 37, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      .profile .profile-box .list ul li span {
+        margin-right: 10px; }
+      /* line 40, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      .profile .profile-box .list ul li:hover {
+        color: #337AB7;
+        transition: all 0.2s ease-in-out; }
+  /* line 47, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+  .profile .edit-profile {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 10px;
+    border: 2px solid #B2B2B2;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: auto;
+    border-radius: 10px; }
+    /* line 56, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    .profile .edit-profile .profile-img img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%; }
+    /* line 61, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    .profile .edit-profile .profile-img button {
+      margin-left: 20px; }
+    /* line 65, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    .profile .edit-profile form {
+      margin-top: 200px; }
+      /* line 67, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      .profile .edit-profile form label {
+        width: 30%;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        margin-top: 20px; }
+      /* line 73, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      .profile .edit-profile form input {
+        width: 80%;
+        margin-bottom: 10px; }
+
+/* line 81, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+.img-wrapper {
+  margin-bottom: 30px; }
+  /* line 82, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+  .img-wrapper img {
+    height: 400px; }
+
+/* line 89, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+#footer .content-wrapper {
+  width: 33%;
+  background-color: transparent; }
+  /* line 93, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+  #footer .content-wrapper .social-media .thumbnail {
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px; }
+    /* line 99, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    #footer .content-wrapper .social-media .thumbnail .image {
+      height: 100%;
+      width: 100%; }
+      /* line 102, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      #footer .content-wrapper .social-media .thumbnail .image img {
+        height: 35px;
+        width: 35px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        /* line 110, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+        #footer .content-wrapper .social-media .thumbnail .image img:hover {
+          -webkit-transform: scale(1.4);
+          -moz-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+          -o-transform: scale(1.4);
+          transform: scale(1.4); }
+
+/* line 124, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+#mainNav {
+  z-index: 1000;
+  background-color: #ffffff; }
+  /* line 128, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+  #mainNav .container .navbar-header {
+    margin-top: 30px;
+    background-color: transparent; }
+    /* line 131, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    #mainNav .container .navbar-header a {
+      font-size: 42px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: #5FCE46; }
+      /* line 136, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      #mainNav .container .navbar-header a span {
+        font-weight: 300;
+        color: #3D3D3D; }
+  /* line 142, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+  #mainNav .container .nav-nav {
+    background-color: transparent;
+    float: right;
+    margin-top: 30px;
+    margin-right: -20px; }
+    /* line 147, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+    #mainNav .container .nav-nav ul li {
+      font-size: 20px;
+      display: inline-block; }
+      /* line 150, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+      #mainNav .container .nav-nav ul li a {
+        color: #494848; }
+        /* line 152, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/settings.scss */
+        #mainNav .container .nav-nav ul li a:hover {
+          color: #255919; }
+
+/*# sourceMappingURL=settings.css.map */

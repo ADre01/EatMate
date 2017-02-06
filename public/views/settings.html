@@ -1,0 +1,57 @@
+<head>
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>EatMate | Never Eat Alone</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="stylesheets/settings.css">
+</head>
+
+<div class="container profile">
+    <div class="row">
+        <div class="col-md-4 profile-box">
+            <div class="list">
+               <h2>Profile:</h2>
+                <ul>
+                    <li><span class="glyphicon glyphicon-plane"></span> Home</li>
+                    <li><span class="glyphicon glyphicon-circle-arrow-left"></span> Go Back</li>
+                    <li><span class="glyphicon glyphicon-ok-circle"></span>Update Profile</li>
+                    <li><span class="glyphicon glyphicon-log-out"></span>Log out</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-7 edit-profile">
+           <div class="col-md-12 profile-img">
+                   <form name="form">
+                       <img src="" alt="">
+                        <div ng-model="file" name="file" class="button" ngf-select ngf-pattern="'image/*'"
+                        ngf-accept="'image/*'">Select</div>
+                        <button class="btn btn-primary" type="submit" ng-click="submit()">Upload Image</button>
+                   </form>
+                    
+                </div>
+            <form>
+                <div class="col-md-12">
+                    <label>Username:</label>
+                    <input type="text">
+                </div><div class="col-md-12">
+                    <label>City:</label>
+                    <input type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Age:</label>
+                    <input type="text">
+                </div>
+                <div class="col-md-12">
+                    <label>Interests:</label>
+                    <input type="text" placeholder="Click on the + button to add more">
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="img-wrapper">
+    <img src="images/Cook-Brothers-Construction-Food-Truck-header.jpg" class="img-responsive">
+</div>

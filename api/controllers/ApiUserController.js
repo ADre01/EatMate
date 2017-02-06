@@ -1,6 +1,15 @@
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
 var bcrypt = require('bcryptjs');
+var Grid = require('gridfs-stream');
+var fs = require('fs-extra');
+var path = require('path');
+var cloudinary = require('cloudinary');
+
+
+process.env['CLOUDINARY_URL']='cloudinary://953571661752691:wG-JsLwOlBbHm269XmNHnqlEvYM@ddqpgjqkh';
+
+
 
 
 
@@ -16,11 +25,23 @@ module.exports.seeAllUsers = function (req, res, next) {
 
 //Finds match according to preference
 module.exports.findMatchedUsers = function (req, res, next) {
-    User.findOne({_id: '58944cb4be718600d472e888'}).then(function(doc){
-        console.log(doc);
-       res.send(doc); 
-    }).catch(function(err){
-        res.send(err);
+    var Userpref = req.body;
+    for (var p in Userpref) {
+        if (p == null) {
+            delete Userpref.p;
+            //return Userpref;
+        }
+    }
+    User.find(Userpref).then(function (doc) {
+        if (doc) {
+            return res.send(doc);
+        } else if (!doc) {
+            return res.status(404).send({
+                message: 'No users found'
+            });
+        }
+    }).catch(function (err) {
+        return res.send(err);
     });
 };
 
@@ -49,3 +70,27 @@ module.exports.updateProfile = function (req, res, next) {
         console.log(err);
     });
 };
+
+ cloudinary.config({
+    cloud_name: 'ddqpgjqkh',
+    api_key: '953571661752691',
+    api_secret: 'wG-JsLwOlBbHm269XmNHnqlEvYM'
+    });
+
+
+
+module.exports.uploadImage = function(req, res, next) {
+    if (req.files.file) {
+        cloudinary.uploader.upload(req.files.file.path, function (result) {
+            if (result.url) {
+                req.imageLink = result.url;
+                res.json(result);
+                next();
+            } else {
+                res.json(error);
+            }
+        });
+    } else {
+        next();
+    }
+}

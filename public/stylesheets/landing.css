@@ -1,0 +1,143 @@
+/* line 2, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 7, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4f7; }
+
+/* line 19, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+#landing .container .landing-login .panel {
+  height: 450px;
+  margin-top: 120px;
+  background: rgba(178, 178, 178, 0.7);
+  border: 1px solid #B2B2B2;
+  border-radius: 0px; }
+  /* line 25, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-title {
+    margin-left: 10px;
+    margin-bottom: -15px; }
+    /* line 28, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #landing .container .landing-login .panel .panel-title span {
+      font-weight: 700;
+      color: #57cc3d; }
+  /* line 34, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-body div {
+    margin-bottom: 10px; }
+  /* line 37, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-body label {
+    font-size: 15px;
+    width: 40%; }
+  /* line 42, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-body input,
+  #landing .container .landing-login .panel .panel-body select {
+    width: 80%; }
+  /* line 45, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-body h4 {
+    margin-left: 11px;
+    margin-top: 40px; }
+    /* line 48, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #landing .container .landing-login .panel .panel-body h4 span {
+      font-weight: 700;
+      color: #57cc3d; }
+  /* line 53, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-body button {
+    margin: 15px;
+    background-color: #57cc3d; }
+    /* line 56, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #landing .container .landing-login .panel .panel-body button:hover {
+      background-color: #43a92d;
+      transition: all 0.2s ease-in-out; }
+  /* line 61, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .landing-login .panel .panel-body #login {
+    font-size: 15px; }
+
+/* line 67, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+#landing .container .matches {
+  border: 2px solid #B2B2B2;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin-bottom: 50px; }
+  /* line 74, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .matches .profile-image {
+    height: 100px;
+    width: 100px;
+    border: 0.5px dashed #B2B2B2;
+    border-radius: none;
+    padding: 5px 0px;
+    margin: 5px 0px; }
+
+/* line 88, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+#footer .content-wrapper {
+  width: 33%;
+  background-color: transparent; }
+  /* line 92, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #footer .content-wrapper .social-media .thumbnail {
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px; }
+    /* line 98, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #footer .content-wrapper .social-media .thumbnail .image {
+      height: 100%;
+      width: 100%; }
+      /* line 101, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+      #footer .content-wrapper .social-media .thumbnail .image img {
+        height: 35px;
+        width: 35px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        /* line 109, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+        #footer .content-wrapper .social-media .thumbnail .image img:hover {
+          -webkit-transform: scale(1.4);
+          -moz-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+          -o-transform: scale(1.4);
+          transform: scale(1.4); }
+
+/* line 123, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+#mainNav {
+  z-index: 1000; }
+  /* line 127, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #mainNav .container .navbar-header {
+    margin-top: 30px;
+    background-color: transparent; }
+    /* line 130, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #mainNav .container .navbar-header a {
+      font-size: 42px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: #5FCE46; }
+      /* line 135, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+      #mainNav .container .navbar-header a span {
+        font-weight: 300;
+        color: #3D3D3D; }
+  /* line 141, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #mainNav .container .nav-nav {
+    background-color: transparent;
+    float: right;
+    margin-top: 30px;
+    margin-right: -20px; }
+    /* line 146, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #mainNav .container .nav-nav ul li {
+      font-size: 20px;
+      display: inline-block; }
+      /* line 149, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+      #mainNav .container .nav-nav ul li a {
+        color: #46a830; }
+        /* line 151, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+        #mainNav .container .nav-nav ul li a:hover {
+          color: #255919; }
+
+/*# sourceMappingURL=landing.css.map */

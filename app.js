@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var jwt = require('jwt-simple');
 var cors = require('cors');
+var multipart = require('connect-multiparty');
+var multipartMiddleware = multipart();
+var cloudinary = require('cloudinary');
 require('./api/models/db');
 require('./api/models/user');
 var routesApi = require('./api/routes/index');
@@ -35,11 +38,14 @@ app.use(function(req, res, next){
 });
 
 app.use('/api', routesApi);
+app.use('development', function(){  
+  app.use(express.errorHandler());
+  cloudinary.config({ cloud_name: 'ddqpgjqkh', api_key: '953571661752691', api_secret: 'wG-JsLwOlBbHm269XmNHnqlEvYM' });
+});
 
-
-/*var server = http.createServer(app).listen(process.env.PORT || 3000, function(){
-   console.log('- Server Connected: Port ', server.address().port); 
-});*/
+app.locals.api_key = cloudinary.config().api_key;  
+app.locals.cloud_name = cloudinary.config().cloud_name;
+    
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

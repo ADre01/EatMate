@@ -2,7 +2,7 @@
     <meta name="viewport" , content="width=device-width, initial-scale=1.0">
     <title>EatMate | Never Eat Alone</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="stylesheets/landing.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 </head>
@@ -10,21 +10,55 @@
 
 
 <section id="landing">
-    <div id="img-wrapper">
-        <div class="container">
-            <div class="row landing-login">
-                <div class="col-sm-12 col-md-5 pull-right">
-                    <div class="panel">
-                        <div class="panel-title">
-                            <h3>EAT<span>MATE</span> | Meet new people</h3>
-                            <subtitle>Register today and connect with others around you</subtitle>
-                        </div>
-                        <div class="panel-body">
-                            
-                        </div>
+   <div class="img-wrapper">
+    <img src="images/Cook-Brothers-Construction-Food-Truck-header.jpg" class="img-responsive">
+</div>
+    <div class="container">
+       
+        <div class="row landing-login">
+            <div class="col-sm-12 col-md-5 pull-left">
+                <div class="panel">
+                    <div class="panel-title">
+                        <h3>EAT<span>MATE</span> | Meet new people</h3>
+                        <subtitle>Fill in what you like and start making friends!</subtitle>
+                    </div>
+                    <div class="panel-body">
+                        <form ng-submit="findMatch()">
+                            <div class="col-md-12">
+                                <label>Location:</label>
+                                <input type="text" name="city" ng-model="user.city">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Age:</label>
+                                <input type="text" name="age" ng-model="user.age">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Gender:</label>
+                                <select name="sex" ng-model="user.sex">
+                                    <option disable selected value> -- Select an option --</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+                            </div>
+                            <h4>Thats it! Hit <span>Match</span> and begin</h4>
+                            <button class="btn btn-lg btn-success" type="submit">Match</button>
+                            <span ng-show="matchFind">Find nearest restaurants</span>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="matches col-md-12" ng-repeat="match in matches">
+            <div class="col-md-3 profile-image">
+                User Photo
+            </div>
+            <div class="col-md-9 profile-desc">
+                <h3>Name: {{match.name}}</h3>
+                <small>Email:{{match.email}}</small><br>
+                <small>Gender: {{match.sex}}</small>
+                <p>Interests: {{match.interests}}</p>
+            </div>
+        </div>
     </div>
+    
 </section>
