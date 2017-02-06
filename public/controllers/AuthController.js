@@ -13,6 +13,7 @@ myApp.controller('AuthController', ['$rootScope', '$scope', '$http', '$location'
             }
             $http.post('http://localhost:3000/api/addUser', user).then(function(savedUser) {
                 console.log(savedUser);
+                $scope.login();
                 }).catch(function (err) {
                     console.log(err);
                     if (err.data.message === 'User already exists') {

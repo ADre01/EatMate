@@ -10,7 +10,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f2f4f7;
+    background-color: #eaeaea;;
 }
 
 #landing {
@@ -74,11 +74,25 @@ html {
                 .profile-image{
                     height: 100px;
                     width: 100px;
-                    border: 0.5px dashed $grey;
                     border-radius: none;
-                    padding: 5px 0px;
-                    margin: 5px 0px;
+                    margin: 15px;   
+                    img{
+                        height: 100px;
+                        width: 100px;
+                    }
                 }
+            .profile-desc{
+                text-align: left;
+                margin-left: 15px;
+
+            }
+            .buttons{
+                margin-top: 20px;
+                button{
+                    width: 130px;
+                    margin-bottom: 5px;
+                }
+            }
                 
             }
     }
@@ -86,15 +100,18 @@ html {
 
 #footer {
     .content-wrapper {
-        width: 33%;
+        width: 100%;
         background-color: transparent;
         .social-media {
+            width: 33%;
+            margin: 0 auto;
             .thumbnail {
                 background-color: transparent;
+                display: inline-block;
                 border: none;
                 width: 60px;
                 height: 60px;
-                margin-right: 5px;
+                margin-right: 0px;
                 .image {
                     height: 100%;
                     width: 100%;

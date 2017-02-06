@@ -10,7 +10,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f2f4f7; }
+  background-color: #eaeaea; }
 
 /* line 19, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
 #landing .container .landing-login .panel {
@@ -69,74 +69,92 @@ html {
   #landing .container .matches .profile-image {
     height: 100px;
     width: 100px;
-    border: 0.5px dashed #B2B2B2;
     border-radius: none;
-    padding: 5px 0px;
-    margin: 5px 0px; }
+    margin: 15px; }
+    /* line 79, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #landing .container .matches .profile-image img {
+      height: 100px;
+      width: 100px; }
+  /* line 84, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .matches .profile-desc {
+    text-align: left;
+    margin-left: 15px; }
+  /* line 89, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #landing .container .matches .buttons {
+    margin-top: 20px; }
+    /* line 91, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #landing .container .matches .buttons button {
+      width: 130px;
+      margin-bottom: 5px; }
 
-/* line 88, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+/* line 102, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
 #footer .content-wrapper {
-  width: 33%;
+  width: 100%;
   background-color: transparent; }
-  /* line 92, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
-  #footer .content-wrapper .social-media .thumbnail {
-    background-color: transparent;
-    border: none;
-    width: 60px;
-    height: 60px;
-    margin-right: 5px; }
-    /* line 98, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
-    #footer .content-wrapper .social-media .thumbnail .image {
-      height: 100%;
-      width: 100%; }
-      /* line 101, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
-      #footer .content-wrapper .social-media .thumbnail .image img {
-        height: 35px;
-        width: 35px;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
-        /* line 109, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
-        #footer .content-wrapper .social-media .thumbnail .image img:hover {
-          -webkit-transform: scale(1.4);
-          -moz-transform: scale(1.4);
-          -ms-transform: scale(1.4);
-          -o-transform: scale(1.4);
-          transform: scale(1.4); }
+  /* line 105, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  #footer .content-wrapper .social-media {
+    width: 33%;
+    margin: 0 auto; }
+    /* line 108, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    #footer .content-wrapper .social-media .thumbnail {
+      background-color: transparent;
+      display: inline-block;
+      border: none;
+      width: 60px;
+      height: 60px;
+      margin-right: 0px; }
+      /* line 115, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+      #footer .content-wrapper .social-media .thumbnail .image {
+        height: 100%;
+        width: 100%; }
+        /* line 118, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+        #footer .content-wrapper .social-media .thumbnail .image img {
+          height: 35px;
+          width: 35px;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+          /* line 126, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+          #footer .content-wrapper .social-media .thumbnail .image img:hover {
+            -webkit-transform: scale(1.4);
+            -moz-transform: scale(1.4);
+            -ms-transform: scale(1.4);
+            -o-transform: scale(1.4);
+            transform: scale(1.4); }
 
-/* line 123, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+/* line 140, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
 #mainNav {
   z-index: 1000; }
-  /* line 127, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  /* line 144, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
   #mainNav .container .navbar-header {
     margin-top: 30px;
     background-color: transparent; }
-    /* line 130, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    /* line 147, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
     #mainNav .container .navbar-header a {
       font-size: 42px;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       color: #5FCE46; }
-      /* line 135, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+      /* line 152, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
       #mainNav .container .navbar-header a span {
         font-weight: 300;
         color: #3D3D3D; }
-  /* line 141, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+  /* line 158, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
   #mainNav .container .nav-nav {
     background-color: transparent;
     float: right;
     margin-top: 30px;
     margin-right: -20px; }
-    /* line 146, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+    /* line 163, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
     #mainNav .container .nav-nav ul li {
       font-size: 20px;
       display: inline-block; }
-      /* line 149, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+      /* line 166, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
       #mainNav .container .nav-nav ul li a {
         color: #46a830; }
-        /* line 151, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
+        /* line 168, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
         #mainNav .container .nav-nav ul li a:hover {
           color: #255919; }
 

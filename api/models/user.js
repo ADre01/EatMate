@@ -10,7 +10,7 @@ var userSchema = new mongoose.Schema({
     password: String,
     url: {
         type: String,
-        Default: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+        default: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
     }
 
 });

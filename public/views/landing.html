@@ -43,21 +43,26 @@
                             <h4>Thats it! Hit <span>Match</span> and begin</h4>
                             <button class="btn btn-lg btn-success" type="submit">Match</button>
                             <span ng-show="matchFind">Find nearest restaurants</span>
+                            <span ng-show="noMatchFind">No matches found</span>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="matches col-md-12" ng-repeat="match in matches">
-            <div class="col-md-3 profile-image">
-                User Photo
+        <div class="matches col-md-12" ng-repeat="match in matches" ng-show="matchFind">
+          <div class="col-md-3 profile-image">
+                <img src="{{match.url}}">
             </div>
-            <div class="col-md-9 profile-desc">
+           <div class="col-md-7 profile-desc">
                 <h3>Name: {{match.name}}</h3>
-                <small>Email:{{match.email}}</small><br>
+                <small>Email: {{match.email}}</small><br>
                 <small>Gender: {{match.sex}}</small>
-                <p>Interests: {{match.interests}}</p>
+                <p>Interests: {{match.interests}}</p>              
             </div>
+            <div class="col-md-2 buttons">
+                 <button class="btn btn-success">Invite</button>
+                    <button class="btn btn-danger">Contact</button>
+            </div>            
         </div>
     </div>
     
