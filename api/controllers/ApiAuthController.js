@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 var User = mongoose.model('User');
 var bcrypt = require('bcryptjs');
 var jwt = require('jwt-simple');
+var session = require('client-sessions');
 
 
 
@@ -29,7 +30,8 @@ module.exports.addUser = function (req, res, next) {
                         city: req.body.city,
                         age: req.body.age,
                         sex: req.body.sex,
-                        password: hash
+                        password: hash,
+                        isLoggedIn: true
                     });
                     user.save(function (err, savedUser) {
                         if (err) {
@@ -68,6 +70,8 @@ module.exports.loginUser = function (req, res, next) {
     }, function (err, user) {
         bcrypt.compare(req.body.password, user[0].password, function (err, guitar) {
             if (guitar) {
+                req.session.user = user;
+                console.log(req.session.user);
                 var token = jwt.encode(user, JWT_SECRET);
                 return res.json({
                     token: token,
@@ -78,5 +82,16 @@ module.exports.loginUser = function (req, res, next) {
             }
         });
 
+    });
+}
+
+
+
+module.exports.logoutUser = function(req, res, next){
+    User.findById(req.params.id).then(function(user){
+        user.isLoggedIn = false;
+        res.end();
+    }).catch(function(err){
+        res.send(err);
     });
 }

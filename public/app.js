@@ -1,6 +1,11 @@
 var myApp = angular.module('myApp', ['ngRoute', 'ngCookies', 'ngMaterial', 'ngFileUpload']);
 
-
+myApp.run(function($rootScope, $cookies){
+   if($cookies.get('token') && $cookies.get('currentUser')){
+       $rootScope.token = $cookies.get('token');
+       $rootScope.currentUser = $cookies.get('currentUser');
+   } 
+});
 
 
 myApp.config(['$routeProvider', function($routeProvider){

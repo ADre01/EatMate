@@ -1,7 +1,7 @@
 myApp.controller('SettingsController', ['$rootScope', '$scope', '$location', '$http', 'Upload', function ($rootScope, $scope, $location, $http, Upload) {
     
  $scope.initProfile = function(){
-     $http.get('http://localhost:3000/api/profile/'+$rootScope.currentUser._id).then(function(user){
+     $http.get('http://localhost:3000/api/profile/'+$rootScope.currentUser).then(function(user){
          $scope.userdata = user.data;
      }).catch(function(err){
          console.log(err);
@@ -10,7 +10,7 @@ myApp.controller('SettingsController', ['$rootScope', '$scope', '$location', '$h
      
 
  $scope.updateProfile = function(){
-     $http.post('http://localhost:3000/api/updateProfile/'+$rootScope.currentUser._id, $scope.userdata).then(function(updatedUser){
+     $http.post('http://localhost:3000/api/updateProfile/'+$rootScope.currentUser, $scope.userdata).then(function(updatedUser){
          $scope.userdata = updatedUser.data;
      }).catch(function(err){
          console.log(err);

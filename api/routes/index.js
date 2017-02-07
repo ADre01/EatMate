@@ -1,6 +1,5 @@
 var UserCtrl = require('../controllers/ApiUserController');
 var AuthCtrl = require('../controllers/ApiAuthController');
-var auth = require('../auth/auth');
 var express = require('express');
 var router = express.Router();
 var multipart = require('connect-multiparty');
@@ -11,6 +10,9 @@ router.post('/addUser', AuthCtrl.addUser);
 
 //login User
 router.post('/login', AuthCtrl.loginUser);
+
+//logout
+router.put('/logout', AuthCtrl.logoutUser);
 
 
 //Get criteria specific users

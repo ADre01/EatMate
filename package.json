@@ -8,6 +8,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.0",
     "body-parser": "~1.15.2",
+    "client-sessions": "^0.7.0",
     "cloudinary": "^1.6.0",
     "connect-multiparty": "^2.0.0",
     "cookie-parser": "~1.4.3",
@@ -16,6 +17,7 @@
     "ejs": "~2.5.2",
     "express": "~4.14.0",
     "express-method-override": "0.0.3",
+    "express-session": "^1.15.0",
     "fs-extra": "^2.0.0",
     "jwt-simple": "^0.5.1",
     "mongoose": "^4.8.1",

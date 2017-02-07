@@ -34,8 +34,9 @@ myApp.controller('AuthController', ['$rootScope', '$scope', '$http', '$location'
             password: $scope.user.password
         }).then(function (res) {
             $cookies.put('token', res.data.token);
+            $cookies.put('currentUser', res.data.user[0]._id);
             $rootScope.token = res.data.token;
-            $rootScope.currentUser = res.data.user[0];
+            $rootScope.currentUser = res.data.user[0]._id;
             console.log($rootScope.currentUser);
             console.log($rootScope.token);
             alert('Successfully signed in');
@@ -48,6 +49,7 @@ myApp.controller('AuthController', ['$rootScope', '$scope', '$http', '$location'
 
     //Logout
     $scope.logout = function () {
+        $http.put('http://localhost:3000/api/logout', $rootScope.currentUser);
         $cookies.remove('token');
         $rootScope.token = null;
         $rootScope.currentUser = null;

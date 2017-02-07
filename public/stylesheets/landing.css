@@ -126,6 +126,7 @@ html {
 
 /* line 140, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
 #mainNav {
+  background-color: #ffffff;
   z-index: 1000; }
   /* line 144, C:/Users/Dre'/Desktop/Github/EatMate/public/stylesheets/landing.scss */
   #mainNav .container .navbar-header {

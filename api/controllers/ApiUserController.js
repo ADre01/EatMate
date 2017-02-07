@@ -50,7 +50,7 @@ module.exports.findMatchedUsers = function (req, res, next) {
 //Updates user profile
 module.exports.updateProfile = function (req, res, next) {
     User.findById(req.params.id).then(function (user) {
-        console.log(req.body);
+        console.log(req.$cookies);
         user.city = req.body.city;
         user.age = req.body.age;
         user.save();
